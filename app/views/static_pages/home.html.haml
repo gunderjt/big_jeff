@@ -1,0 +1,6 @@
+= form_tag '/calculate', remote: true, id: "calculate" do
+  = text_field_tag :value
+  = select_tag :units, options_for_select( %w(feet inches meters miles))
+  %br
+  = submit_tag "Convert to Jeff", class: "static_pages"
+#results
